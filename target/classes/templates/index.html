@@ -1,0 +1,21 @@
+User
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+
+<div th:replace="header :: header"></div>
+<body>
+	<div th:replace="header :: navbar"></div>
+	<div class="card centered-card">
+		<div class="card-body">
+			<h2 th:text="${ticketAttribute.title}"></h2>
+			<h2 th:text="${ticketAttribute.shortDescription}"></h2>
+			<h2 th:text="${ticketAttribute.content}"></h2>
+			<h2 th:text="${ticketAttribute.createdOn}"></h2>
+			<h2 th:text="${ticketAttribute.updatedOn}"></h2>
+
+		</div>
+	</div>
+
+<div th:replace="footer :: footer"></div>
+</body>
+</html> 
